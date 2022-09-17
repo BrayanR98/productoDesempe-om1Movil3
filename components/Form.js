@@ -12,12 +12,12 @@ import {
 } from "./validacion";
 
 export default function Form() {
-  const [identificacion, setIdentificacion] = useState("12");
-  const [nombre, setNombre] = useState("x");
-  const [asignatura, setAsignatura] = useState("m");
-  const [momentoUno, setMomentoUno] = useState("2");
-  const [momentoDos, setMomentoDos] = useState("2");
-  const [momentoTres, setMomentoTres] = useState("2");
+  const [identificacion, setIdentificacion] = useState("");
+  const [nombre, setNombre] = useState("");
+  const [asignatura, setAsignatura] = useState("");
+  const [momentoUno, setMomentoUno] = useState("");
+  const [momentoDos, setMomentoDos] = useState("");
+  const [momentoTres, setMomentoTres] = useState("");
   const [definitiva, setDefinitiva] = useState("");
   const [observaciones, setObservaciones] = useState("");
 
@@ -31,44 +31,15 @@ export default function Form() {
   const [notas, setNotas] = useState([
     {
       identificacion: "1",
-      nombre: "2",
-      asignatura: "3",
-      momentoUno: "4",
+      nombre: "joselito",
+      asignatura: "moviles3",
+      momentoUno: "4.5",
       momentoDos: "5",
-      momentoTres: "6",
-      definitiva: "algo 1",
-      observaciones: "algo 2",
-    },
-    {
-      identificacion: "2",
-      nombre: "2",
-      asignatura: "3",
-      momentoUno: "4",
-      momentoDos: "5",
-      momentoTres: "6",
-      definitiva: "algo 1",
-      observaciones: "algo 2",
-    },
-    {
-      identificacion: "3",
-      nombre: "2",
-      asignatura: "3",
-      momentoUno: "4",
-      momentoDos: "5",
-      momentoTres: "6",
-      definitiva: "algo 1",
-      observaciones: "algo 2",
-    },
-    {
-      identificacion: "4",
-      nombre: "2",
-      asignatura: "3",
-      momentoUno: "4",
-      momentoDos: "5",
-      momentoTres: "6",
-      definitiva: "algo 1",
-      observaciones: "algo 2",
-    },
+      momentoTres: "4.5",
+      definitiva: "4.7",
+      observaciones: "Aprueba",
+    }
+   
   ]);
 
   const onPressCalcularGuardar = () => {
